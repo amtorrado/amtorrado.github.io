@@ -11,44 +11,49 @@
             display: flex;
             justify-content: center; /* Centra horizontalmente todo el contenido */
             align-items: center; /* Centra verticalmente todo el contenido */
-            height: 100vh; /* Establece el cuerpo para ocupar toda la altura de la ventana */
+            min-height: 100vh; /* Establece el cuerpo para ocupar al menos toda la altura de la ventana */
             background-image: url('https://amtorrado.github.io/images/fondo.png'); /* Fondo inicial */
             background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             transition: background-image 0.5s ease; /* Transición suave al cambiar el fondo */
+            font-family: Arial, sans-serif; /* Fuente predeterminada */
         }
         .contenedor {
             background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
             padding: 20px; /* Espacio alrededor del texto */
             border-radius: 10px; /* Bordes redondeados */
-            width: 50%; /* Ancho del contenedor */
+            width: 90%; /* Ancho del contenedor */
+            max-width: 400px; /* Ancho máximo del contenedor */
             text-align: center; /* Centrar texto */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
         }
         h1 {
-            font-size: 36px; /* Tamaño de la fuente */
+            font-size: 24px; /* Tamaño de la fuente */
             color: black; /* Color del texto */
         }
         p {
-            font-size: 18px; /* Tamaño de la fuente */
+            font-size: 14px; /* Tamaño de la fuente */
             color: black; /* Color del texto */
             margin-top: 10px; /* Espacio superior para separar del título */
         }
         form {
             display: flex;
-            justify-content: space-between; /* Espacio uniforme entre los elementos */
+            flex-direction: column; /* Coloca los elementos en columna */
+            align-items: center; /* Centra horizontalmente */
             margin-top: 20px; /* Espacio superior para separar del párrafo */
         }
         /* Estilos para los radio buttons y labels */
         input[type="radio"] {
-            margin-right: 10px; /* Espacio entre los botones de radio */
+            margin-right: 5px; /* Espacio entre los botones de radio */
         }
         label {
             display: flex;
             align-items: center;
+            margin-bottom: 10px; /* Espacio entre cada opción */
         }
         img {
-            max-width: 100px; /* Ajusta el tamaño de las miniaturas */
-            margin-left: 10px; /* Espacio entre el label y la imagen */
+            max-width: 80px; /* Ajusta el tamaño de las miniaturas */
+            margin-left: 5px; /* Espacio entre el label y la imagen */
         }
         button {
             margin-top: 20px; /* Espacio superior para separar del formulario */
